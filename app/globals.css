@@ -2,26 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@layer base {
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        outline: none;
+        list-style-type: none;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+    
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@keyframes burger-hover {
+    0%, 100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    25% {
+        transform: translateX(10px);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    75% {
+        transform: translateX(-10px);
+        opacity: 0;
+    }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.hamburger-button:hover span:nth-child(1) {
+    animation: burger-hover 1s ease-in-out  0.3s;
 }
+
+.hamburger-button:hover span:nth-child(2) {
+    animation: burger-hover 1s ease-in-out  0.45s;
+}
+
+.hamburger-button:hover span:nth-child(3) {
+    animation: burger-hover 1s ease-in-out  0.6s;
+}
+
+
