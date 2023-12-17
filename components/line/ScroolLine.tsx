@@ -16,9 +16,9 @@ const VerticalNav = () => {
     }, []);
 
     return (
-        <div className="fixed ml-24 h-screen">
+        <div className="fixed ml-24 h-screen z-10">
             <div className="absolute left-0 bg-white opacity-30 w-[1px] h-full rounded-md"></div>
-            <div className="absolute left-0 bg-white w-[1px] h-[8rem]" style={{ top: `${markerPosition}%` }}></div>
+            <div className="absolute left-0 bg-white w-[1px] h-[5rem]" style={{ top: `${markerPosition}%` }}></div>
         </div>
     );
 };
