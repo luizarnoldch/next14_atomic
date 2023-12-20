@@ -1,6 +1,3 @@
-import Navbar from '@/components/navbar/Navbar'
-import ScroolLine from '@/components/line/ScroolLine'
-
 export default function Home() {
 	return (
 		<main className=' h-full w-full'>
@@ -20,9 +17,9 @@ export default function Home() {
 						</h1>
 					</header>
 					<div className='container ml-28 flex space-x-8 text-start text-white'>
-						<div className='line-footer relative mb-[4rem]'>
-							<div className='absolute left-0 h-[4rem] w-[1px] rounded-md bg-white opacity-30'></div>
-							<div className='absolute left-0 h-[1rem] w-[1px] bg-white'></div>
+						<div className='line-footer relative h-16 w-1 overflow-hidden'>
+							<div className='h-full w-[1px] rounded-md bg-white opacity-30'></div>
+							<div className='absolute h-[3rem] w-[1px] bg-white vertical-spin'></div>
 						</div>
 						<h5 className='font-bold'>MIRA NUESTRO TRABAJO</h5>
 					</div>
