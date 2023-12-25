@@ -19,10 +19,10 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
-			<body className={inter.className + `w-screen h-screen flex`}>
+			<body className={inter.className + ``}>
 				<Navbar />
 				<ScroolLine />
-				<div className='w-full bg-transparent'>{children}</div>
+				{children}
 				<Analytics />
 			</body>
 		</html>
