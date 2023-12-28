@@ -64,7 +64,7 @@ const Navbar: React.FC = () => {
 				hasScrolled ? 'nav-slide-down' : 'bg-transparent'
 			}`}
 		>
-			<div className={`ml-16 bg-transparent`}>
+			<div className={`ml-8 bg-transparent`}>
 				{hasScrolled ? (
 					<div>
 						<Image

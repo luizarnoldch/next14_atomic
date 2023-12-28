@@ -110,6 +110,8 @@
 	transition: transform 0.7s ease-out 0.3s;
 }
 
+*/
+
 @keyframes page-footer {
 	0%,
 	100% {
@@ -129,16 +131,16 @@
 		opacity: 0;
 	}
 }
+
 @keyframes vertical-spin {
 	from {
-		top: -50%;
+		top: calc(0% - 3rem);
 	}
 	to {
-		top: calc(100%);
+		top: calc(100% + 1.5rem);
 	}
 }
 
 .vertical-spin {
-	position: absolute;
-	animation: vertical-spin 1s infinite linear;
-} */
+	animation: vertical-spin 2s infinite linear;
+}

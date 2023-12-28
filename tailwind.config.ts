@@ -9,7 +9,7 @@ const config: Config = {
 	theme: {
 		extend: {
 			backgroundImage: {
-				'landing-image-1': "url('/1.jpg')",
+				'landing-image-1': "url('/background/main50.webp')",
 				'landing-image-2': "url('/2.jpg')",
 				'landing-image-3': "url('/3.jpg')",
 			},
