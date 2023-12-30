@@ -1,16 +1,18 @@
-import VerticalLine from '@/components/verticalLine/VerticalLine'
 import React from 'react'
 
-const page = () => {
-  return (
-    <div className='bg-black w-screen h-screen  '>
-        Test
-        <div className='ml-30 flex flex-row'>
-            Vertical Line
-            <VerticalLine />
-        </div>
-    </div>
-  )
+const HoverImageZoom: React.FC = () => {
+	return (
+		<div className='flex h-screen w-screen items-center justify-center bg-black'>
+			<div className='component bg-white'>
+				<div className='imageWrapper'>
+					{/* Aquí se podría agregar contenido adicional si es necesario */}
+				</div>
+				<div className='overlay'>
+					{/* Contenido adicional para el overlay si es necesario */}
+				</div>
+			</div>
+		</div>
+	)
 }
 
-export default page
+export default HoverImageZoom
